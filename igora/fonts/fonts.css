@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'GothamPro-Medium';
+  src: url(./GothamPro-Medium.woff2) format('woff2');
+  src: url(./GothamPro-Medium.woff) format('woff');
+  src: url(./GothamPro-Medium.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GothamPro-Regular';
+  src: url(./GothamPro.woff2) format('woff2');
+  src: url(./GothamPro.woff) format('woff');
+  src: url(./GothamPro.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Vetrino-Regular';
+  src: url(./Vetrino.woff2) format('woff2');
+  src: url(./Vetrino.woff) format('woff');
+  src: url(./Vetrino.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}

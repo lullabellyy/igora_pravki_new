@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ИЖОРА - сайт подбора недвижимости</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+<body class="page">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__inners">
+						<div class="logo-inner__img">
+							<svg  fill="none" viewBox="0 0 53 88"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M31.6592 8.64268L31.5316 17.2854L29.6176 19.0139L27.7195 20.7425L27.7514 49.0003L27.7993 77.2431L28.517 77.3784C30.2077 77.679 30.431 77.7692 30.431 78.175C30.431 78.5508 30.3991 78.5508 29.7611 78.4606C29.171 78.3704 19.3139 76.3713 17.6073 75.9955C17.1607 75.8903 16.8576 75.9054 16.4908 76.0707C16.2196 76.1909 13.875 77.0928 11.2911 78.0848C4.94296 80.5348 0.764062 82.1882 0.827862 82.2483C0.987362 82.3986 9.04211 80.2643 13.7793 78.8213C14.832 78.5057 15.7571 78.2351 15.8049 78.2351C15.8687 78.2351 15.9166 78.3854 15.9166 78.5808C15.9166 78.8965 15.5497 79.0317 10.4617 80.5499C7.44711 81.4367 4.49636 82.3235 3.87431 82.5039L2.75781 82.8496L2.70996 85.4198L2.67806 87.9901L1.83271 88.0652C1.38611 88.1254 0.604562 88.1855 0.126063 88.2155C-0.352437 88.2456 0.572662 88.2306 2.19956 88.1855C6.20301 88.0953 9.80771 87.9149 8.30841 87.8849L7.14406 87.8548V85.3747C7.14406 83.5109 7.19191 82.8646 7.35141 82.8345C9.63226 82.2333 15.6933 80.8354 15.773 80.8805C15.8368 80.9106 15.8687 82.4738 15.8528 84.3526L15.789 87.7496L16.8576 87.6444C17.4318 87.5993 18.963 87.5542 20.2709 87.5542H22.6156V84.3526C22.6156 82.579 22.6474 81.106 22.6953 81.0609C22.7432 81.0158 23.3014 81.0609 23.9394 81.1661C24.5774 81.2713 25.7417 81.4367 26.5233 81.5419C27.3208 81.6321 28.1502 81.7523 28.4054 81.7824L28.836 81.8726L28.8041 84.5931C28.7563 86.9079 28.7244 87.3287 28.517 87.3287C28.3416 87.3287 28.2618 87.1183 28.198 86.5772C28.1342 85.9459 28.0704 85.8257 27.7674 85.7806C27.4005 85.7355 27.3048 85.9158 27.2092 86.8628C27.1772 87.1033 27.0815 87.3287 26.9699 87.3588C26.8423 87.4039 26.7625 87.1333 26.7147 86.472L26.6668 85.525L26.635 86.4569L26.603 87.3889L26.0129 87.449C25.6779 87.479 26.9539 87.4941 28.836 87.4941L32.2653 87.479L32.3131 52.1117C32.345 28.0925 32.2972 16.7743 32.1855 16.8344C32.1058 16.8795 32.0101 16.9096 31.9941 16.8795C31.9941 16.8495 31.9303 13.0467 31.8825 8.41723L31.7868 0L31.6592 8.64268ZM22.6156 78.4455C25.1994 78.8213 28.0864 79.2422 29.0434 79.3775L30.75 79.633V80.129C30.75 80.5799 30.7022 80.64 30.3194 80.64C29.7292 80.64 17.7349 78.7311 17.5116 78.6109C17.3361 78.5057 17.2883 77.8894 17.4478 77.7391C17.4956 77.694 17.6232 77.679 17.7189 77.7241C17.8306 77.7541 20.0317 78.0848 22.6156 78.4455ZM17.7827 84.5029C17.7508 84.7434 17.7189 84.5781 17.7189 84.1723C17.7189 83.7514 17.7508 83.571 17.7827 83.7514C17.8146 83.9468 17.8146 84.2775 17.7827 84.5029Z" fill="white"/>
+								<path d="M33.4134 14.956C33.3496 17.3909 33.2699 29.0999 33.222 40.9592C33.1742 52.8185 33.0944 68.1198 33.0466 74.9588L32.9349 87.4042H33.5251H34.0993L34.1152 83.3008C34.1312 81.0613 34.1152 65.2639 34.0993 48.204C34.0833 31.1591 34.1152 17.2106 34.1471 17.2106C34.195 17.2106 35.4072 18.5784 36.8267 20.2468C38.2622 21.9302 40.1922 24.1398 41.1173 25.1769L42.792 27.0557L42.8718 57.3427L42.9515 87.6297L46.3807 87.7349C48.2628 87.78 50.4639 87.8552 51.2455 87.8852C52.043 87.9303 52.4896 87.9303 52.2503 87.9003L51.8037 87.8401V86.3521V84.864L51.2933 84.7889C50.767 84.6987 44.4189 84.2478 43.8288 84.2478C43.5895 84.2478 43.5098 84.1426 43.5098 83.8119C43.5098 83.391 43.5417 83.376 44.1159 83.4361C44.8017 83.4962 50.432 83.9171 51.9632 84.0073L53 84.0824L52.2025 83.9321C51.7718 83.857 49.6505 83.4812 47.4972 83.1054C45.36 82.7297 43.5417 82.384 43.4779 82.3539C43.4141 82.3088 43.3503 69.7581 43.3503 54.4568V26.6499L41.3087 24.1698C40.1922 22.8171 38.661 20.9532 37.8954 20.0213C37.1298 19.0894 35.9016 17.5863 35.152 16.6845L33.7962 15.0311L33.6686 12.7765L33.5251 10.5219L33.4134 14.956ZM46.8592 86.0515C46.8592 87.0134 46.8114 87.2539 46.62 87.2539C46.4286 87.2539 46.3807 87.0435 46.3807 86.292C46.3807 85.2699 46.4764 84.849 46.7157 84.849C46.7954 84.849 46.8592 85.3901 46.8592 86.0515ZM49.6824 86.9834C49.6505 87.3441 49.6186 87.0585 49.6186 86.3521C49.6186 85.6456 49.6505 85.3601 49.6824 85.7058C49.7143 86.0665 49.7143 86.6377 49.6824 86.9834Z" fill="white"/>
+								<path d="M38.2459 34.0448C38.2459 39.7114 38.2459 47.3771 38.2459 51.0897V57.8235L38.2459 57.8685C37.9429 57.7182 38.365 57.6431 38.2459 57.6431C38.2852 57.7182 38.1662 57.8235 38.2459 57.9287C38.3097 58.0339 37.7674 57.7333 38.2459 57.9738V64.3468C38.2459 67.849 38.1821 70.7198 38.1024 70.7198C38.0226 70.7198 38.4926 70.9153 38.1257 70.795C37.7429 70.6748 38.2374 70.8401 38.2055 70.8702C37.711 70.7199 38.1576 70.9002 38.2055 70.8702L38.2459 70.9303V79.2423V87.5543H40.1599H42.0739L41.9942 57.9287L41.9144 28.288L41.2445 27.4763C40.1599 26.1687 38.8201 24.5303 38.533 24.1245C38.2778 23.7637 38.2619 24.3048 38.2459 34.0448ZM39.7293 27.9573L40.3354 28.6337V57.9888V87.3288L39.6814 87.3739L39.0434 87.419V57.3575C39.0434 40.8086 39.0594 27.2809 39.0913 27.2809C39.1072 27.2809 39.4103 27.5815 39.7293 27.9573Z" fill="white"/>
+								<path d="M17.9104 24.0324L17.7789 27.5088L17.143 27.9408C16.7922 28.1876 15.8494 28.887 15.06 29.5041C14.2487 30.1212 12.2534 31.6434 10.609 32.8982L7.62701 35.161V55.6697C7.64894 67.3743 7.73665 76.1991 7.84628 76.1991C8.76718 76.1991 8.72333 77.1453 8.72333 55.752C8.72333 36.2718 8.72333 35.5518 9.118 35.2638C12.2315 32.9394 15.5205 30.5326 15.6082 30.5326C15.6739 30.5326 15.7397 40.4887 15.7397 52.6459V74.7385L16.5729 74.9443C17.0114 75.0471 17.6473 75.2117 17.9981 75.294L18.5901 75.4174V52.3579C18.5901 39.6659 18.6559 29.2984 18.7655 29.2984C18.8532 29.2984 19.9934 30.2035 21.309 31.2937C22.6246 32.4046 24.1813 33.6799 24.7514 34.1325C25.7819 34.9347 25.8039 34.9759 25.8039 36.1278C25.8258 36.7861 25.8039 37.3209 25.76 37.3209C25.7381 37.3209 25.168 36.8478 24.5321 36.2924C23.8744 35.7164 22.9754 34.9759 22.493 34.6262L21.6598 33.9885V34.8319C21.6598 35.305 21.7694 35.6753 21.8791 35.6753C22.0106 35.6753 22.6465 36.0661 23.3043 36.5186C24.4006 37.3003 24.5102 37.4443 24.5102 38.1849C24.5102 38.6374 24.4444 38.9665 24.3567 38.9254C24.2471 38.8842 23.6551 38.5345 23.0412 38.1437C21.9668 37.4855 21.8791 37.362 21.8791 36.6215C21.8791 36.0044 21.8133 35.8604 21.6379 36.025C21.3748 36.2718 21.5721 38.5757 21.8352 38.514C21.9229 38.4934 22.5588 38.8225 23.2604 39.2339C24.4444 39.9539 24.5102 40.0568 24.5102 40.8384C24.5102 41.6201 24.4883 41.6407 24.0278 41.4144C22.3176 40.5505 21.8791 40.1596 21.8791 39.3985C21.8571 38.802 21.8133 38.7197 21.6379 39.0077C21.5063 39.2339 21.4844 39.9128 21.594 40.7562C21.6817 41.5173 21.7914 41.9492 21.8352 41.7024C21.901 41.2498 21.9448 41.2704 23.2166 42.011C24.4225 42.7104 24.5102 42.8132 24.5102 43.5332C24.5102 43.9651 24.4664 44.3148 24.4006 44.3148C24.0936 44.3148 21.8571 42.9983 21.6817 42.7309C21.5721 42.5458 21.4844 49.6426 21.4625 59.1667L21.4405 75.9316L23.6989 76.3842C24.9487 76.631 26.1766 76.8779 26.4397 76.9602L26.9221 77.063V55.896V34.729L22.5369 30.8618L18.1516 26.974L18.1078 23.765L18.042 20.556L17.9104 24.0324ZM24.5102 46.269C24.5102 46.6599 24.4664 46.989 24.4006 46.989C24.3567 46.989 23.7647 46.7422 23.085 46.4336L21.8791 45.8782V44.8908V43.924L23.1946 44.7468C24.3787 45.4874 24.5102 45.6314 24.5102 46.269ZM23.2604 47.5033C24.4444 48.0792 24.5102 48.1615 24.5102 48.8815C24.5102 49.3135 24.4664 49.6632 24.4006 49.6632C24.3567 49.6632 23.7647 49.4163 23.085 49.1078C22.0764 48.6346 21.8791 48.4701 21.8791 47.997C21.8791 47.6884 21.8133 47.277 21.7256 47.0713C21.5721 46.6599 21.616 46.6804 23.2604 47.5033ZM24.5102 51.5556C24.5102 51.9876 24.4225 52.3373 24.3348 52.3373C24.0059 52.3373 21.8133 51.2059 21.8571 51.0414C21.8571 50.9591 21.8791 50.5683 21.8791 50.1774V49.4369L23.1946 50.1157C24.4444 50.7534 24.5102 50.8357 24.5102 51.5556ZM23.3043 52.8927C24.4664 53.4276 24.5102 53.4893 24.5102 54.2504C24.5102 54.9703 24.4664 55.0321 24.0278 54.9086C23.7428 54.8263 23.1289 54.5589 22.6465 54.3121C21.901 53.9418 21.7694 53.7567 21.7037 53.0984C21.6598 52.6665 21.7256 52.3373 21.8571 52.3373C21.9887 52.3373 22.6246 52.5842 23.3043 52.8927ZM23.2604 55.6286C24.4006 56.1017 24.5102 56.2046 24.5102 56.8011C24.5102 57.1508 24.4444 57.5005 24.3567 57.5416C24.2471 57.6034 23.6332 57.4388 22.9754 57.192C21.7914 56.7394 21.7694 56.7188 21.7475 55.8754C21.7475 55.4023 21.8133 55.0321 21.8791 55.0526C21.9668 55.0938 22.5807 55.3406 23.2604 55.6286ZM24.5102 59.5987C24.5102 60.0307 24.4225 60.3598 24.3348 60.3187C24.2471 60.2775 23.6551 60.0718 23.0192 59.8661C21.901 59.4547 21.8791 59.4547 21.8791 58.5907V57.7062L23.1946 58.2616C24.4444 58.7964 24.4883 58.8376 24.5102 59.5987ZM23.37 60.8741C24.4664 61.2649 24.5102 61.306 24.5102 62.0466C24.5102 62.4786 24.4444 62.8283 24.3567 62.8283C24.269 62.8283 23.677 62.6226 23.0412 62.3757C21.9229 61.9437 21.8791 61.9026 21.8791 61.1209C21.8791 60.6889 21.9448 60.3598 22.0545 60.4009C22.1422 60.4421 22.7342 60.6478 23.37 60.8741ZM24.2032 63.6511C24.4225 63.6511 24.5102 63.8979 24.5102 64.4945C24.5102 65.2144 24.4444 65.3173 24.0936 65.1939C23.8744 65.1321 23.2604 64.9676 22.7342 64.8236C21.8352 64.5767 21.7694 64.4945 21.7694 63.8362C21.7475 63.4659 21.7914 63.0751 21.8133 62.9928C21.8571 62.9105 22.3395 63.034 22.8877 63.2397C23.4358 63.4659 24.0278 63.6511 24.2032 63.6511ZM23.2166 65.9344C24.4883 66.3664 24.5102 66.3869 24.5102 67.1686C24.5102 67.6212 24.4883 67.9709 24.4664 67.9709C24.4225 67.9709 23.8086 67.7857 23.085 67.58C21.7694 67.1892 21.7694 67.1892 21.7037 66.3458C21.6598 65.8933 21.7037 65.5024 21.7914 65.5024C21.8791 65.5024 22.5149 65.7081 23.2166 65.9344Z" fill="white"/>
+								<path d="M11.0791 35.2203L10.3834 36.0817V55.8726V75.6845L11.0791 75.2643L11.7616 74.8652V54.612C11.7616 43.456 11.7616 34.3379 11.7616 34.3379C11.7616 34.3379 11.4466 34.7371 11.0791 35.2203Z" fill="white"/>
+								</svg>
+						</div>
+					<div class="header__inner-contacts contacts-inner">
+						<div class="contacts-inner__adress">
+							<p>Петербург, Большая морская 18</p>
+						</div>
+						<div class="contacts-inner__contacts">
+							<p><a class="contacts__link" href="mailto:izhora@mail.ru">izhora@mail.ru</a></p>
+							<p><a class="contacts__link" href="tel:+79820708070">+7 (982) 070 80 70</a></p>
+						</div>
+					</div>
+			  </div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__wrapper">
+						<div class="hero__contant">
+							<div class="hero__suptitle">
+								<p>Найди дом своей мечты</p>
+							</div>
+							<h1 class="hero__title">
+								<p>ИЖОРА</p>
+							</h1>
+						</div>
+						<div class="hero__application">
+							<button class="hero__button btn">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<div class="services__inners">
+						<h2 class="sevices__title title">
+							<p>Наши услуги</p>
+						</h2>
+						<div class="cervices__inners">
+							<div class="services__slider swiper">
+								<div class="services__wrapper swiper-wrapper">
+									<div class="services__slide swiper-slide"> <!--блок с фоновым изображением картинки (backgraund_bg)-->
+										<div class="services__inner inner-services">
+											<img class="backgraund_bg" src="./image/services/01.png" alt="backgraund_image">
+											<div class="inner-services__list"></div>
+											<h3 class="inner-services__title">
+												<p>Подбор квартиры</p>
+											</h3>
+											<div class="inner-services__text">
+												<p>
+												Наши специалисты подберут вам подходящую квартиру из базы в более чем ста жилищных комплексов
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="services__slide backgraund--green swiper-slide"> <!--блок с фоновым зеленым цветом (backgraund--green)-->
+										<div class="services__inner  inner-services">
+											<div class="inner-services__list"></div>
+											<h3 class="inner-services__title">
+												<p>Продажа вторичного жилья</p>
+											</h3>
+											<div class="inner-services__text">
+												<p>Поможем продать вашу квартиру 
+													на вторичном рынке</p></div>
+										</div>
+									</div>
+									<div class="services__slide backgraund--green  swiper-slide">
+										<div class="services__inner  inner-services">
+											<div class="inner-services__list"></div>
+											<h3 class="inner-services__title">
+												<p>Сопровождение сделок</p>
+											</h3>
+											<div class="inner-services__text">
+												<p>
+													Проконтролируем все этапы сделки, от проверки документов до получения ключей
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="services__slide swiper-slide"> 
+										<div class="services__inner inner-services">
+											<img class="backgraund_bg" src="./image/services/04.png" alt="backgraund_image">
+											<div class="inner-services__list"></div>
+											<h3 class="inner-services__title">
+												<p>Ипотека</p>
+											</h3>
+											<div class="inner-services__text">
+												<p>Поможем подобрать и оформить ипотеку 
+													на покупку жилья</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="services__navigation">
+								<div class="services-pagination"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="stock">
+				<div class="stock__container">
+					<div class="stock__wrapper">
+						<h2 class="stock__title title">
+							<p>Акционные предложения</p>
+						</h2>
+						<div class="sub__title">
+							<p>Подробнее о действующий акциях Вам расскажет наш консультант</p>
+						</div>
+						<div class="stock__inner inner-stock">
+							<div class="inner-stock__column column-stock">
+								<div class="column-stock__number number">
+									<p>50 000 ₽</p>
+								</div>
+								<div class="column-stock__text">
+									<p>Можно вернуть обратно,
+										совершая покупку у нас</p>
+								</div>
+							</div>
+							<div class="inner-stock__column column-stock">
+								<div class="column-stock__number number">
+									<p>60 000 ₽</p>
+								</div>
+								<div class="column-stock__text">
+									<p>Скидка каждому 5 клиенту</p>
+								</div>
+							</div>
+							<div class="inner-stock__column column-stock">
+								<div class="column-stock__number number">
+									<p>20+</p>
+								</div>
+								<div class="column-stock__text">
+									<p>Банков, в которых мы можем помочь оформить Вам ипотеку</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="stock__containers-2">
+					<div class="stock__baze baze-stock">
+					<div class="baze-stock__image image-baze">
+						<div class="image-baze__img  image-baze__img-delite">
+							<img src="./image/stock/01.jpg" alt="image">
+						</div>
+						<div class="image-baze__img">
+							<img src="./image/stock/02.jpg" alt="image">
+						</div>
+					</div>
+					<div class="baze-stock__inner">
+						<div class="baze-stock__content baze-stock__content-right content-base">
+							<div class="content-base__number number">
+								<p>20 000</p>
+							</div>
+							<div class="content-base__text">
+								<p>квартир в базе</p>
+							</div>
+						</div>
+						<div class="baze-stock__content  content-base">
+							<div class="content-base__number number">
+								<p>100+</p>
+							</div>
+							<div class="content-base__text">
+								<p>жилищных комплексов</p>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</section>
+			<section class="house">
+				<div class="house__container">
+					<div class="house__wrapper">
+						<h2 class="house__title title">
+							<p>Новые дома</p>
+						</h2>
+					</div>
+				</div>
+				<div class="hause__containers-2">
+					<div class="house__slider">
+						<div class="house-slider swiper-container swiper">
+							<div class="house-slider__wrapper swiper-wrapper">
+									<div  class="house-slider__slide swiper-slide">
+										<a href="#" class="house__inner--link inner-house">
+											<div class="inner-house__img">
+												<img src="./image/house/01.jpg" alt="image">
+												<span>2025 год постройки</span>
+											</div>
+											<div class="inner-house__label label-house">
+												<div class="label-house__prise">
+													<p class="prise__ru">от 7 987 000 руб <span class="prise__kv">за 25 м</span></p>
+													<h4 class="label-house__title"><p>ЖК “Большая Охта”</p></h4>
+													<div class="label-house__adress">
+														<p>Россия, Санкт-Петербург, Партизанская улица, 3</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div  class="house-slider__slide swiper-slide">
+										<a href="#" class="house__inner--link inner-house">
+											<div class="inner-house__img">
+												<img src="./image/house/02.jpg" alt="image">
+												<span>2025 год постройки</span>
+											</div>
+											<div class="inner-house__label label-house">
+												<div class="label-house__prise">
+													<p class="prise__ru">от 7 987 000 руб <span class="prise__kv">за 25 м</span></p>
+													<h4 class="label-house__title"><p>ЖК “Большая Охта”</p></h4>
+													<div class="label-house__adress">
+														<p>Россия, Санкт-Петербург, Партизанская улица, 3</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div  class="house-slider__slide swiper-slide">
+										<a href="#" class="house__inner--link inner-house">
+											<div class="inner-house__img">
+												<img src="./image/house/03.jpg" alt="image">
+												<span>2025 год постройки</span>
+											</div>
+											<div class="inner-house__label label-house">
+												<div class="label-house__prise">
+													<p class="prise__ru">от 7 987 000 руб <span class="prise__kv">за 25 м</span></p>
+													<h4 class="label-house__title"><p>ЖК “Большая Охта”</p></h4>
+													<div class="label-house__adress">
+														<p>Россия, Санкт-Петербург, Партизанская улица, 3</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div  class="house-slider__slide swiper-slide">
+										<a href="#" class="house__inner--link inner-house">
+											<div class="inner-house__img">
+												<img src="./image/house/01.jpg" alt="image">
+												<span>2025 год постройки</span>
+											</div>
+											<div class="inner-house__label label-house">
+												<div class="label-house__prise">
+													<p class="prise__ru">от 7 987 000 руб <span class="prise__kv">за 25 м</span></p>
+													<h4 class="label-house__title"><p>ЖК “Большая Охта”</p></h4>
+													<div class="label-house__adress">
+														<p>Россия, Санкт-Петербург, Партизанская улица, 3</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div  class="house-slider__slide swiper-slide">
+										<a href="#" class="house__inner--link inner-house">
+											<div class="inner-house__img">
+												<img src="./image/house/02.jpg" alt="image">
+												<span>2025 год постройки</span>
+											</div>
+											<div class="inner-house__label label-house">
+												<div class="label-house__prise">
+													<p class="prise__ru">от 7 987 000 руб <span class="prise__kv">за 25 м</span></p>
+													<h4 class="label-house__title"><p>ЖК “Большая Охта”</p></h4>
+													<div class="label-house__adress">
+														<p>Россия, Санкт-Петербург, Партизанская улица, 3</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="errow__wrapper">
+						<div class="swiper-button house-button-prev">
+							<img  src="./image/house/arrow.png" alt="arrow">
+						</div>
+						<div class="swiper-button house-button-next">
+							<img src="./image/house/arrow.png" alt="arrow">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="form">
+				<div class="form__container">
+					<div class="form__wrapper">
+						<h2 class="form__title">
+							<p>Бесплатная консультация <span>со специалистом</span> </p>
+						</h2>
+						<div class="form__label">
+							<p>Оставьте заявку и мы свяжемся с Вами</p>
+						</div>
+						<form action="/api/submit" method="POST">
+							<input 
+	autocomplete="off" 
+	type="text" 
+	name="name" 
+	data-value="Имя" 
+	placeholder="Имя" 
+	class="input"
+	pattern="[A-Za-zА-Яа-яЁё\s]+"
+	title="Только буквы"
+	required
+>
+
+<input 
+	autocomplete="off" 
+	type="tel" 
+	name="fone" 
+	data-value="Номер телефона" 
+	placeholder="Номер телефона" 
+	class="input"
+	pattern="[0-9]+"
+	title="Только цифры"
+	required
+>
+							<button type="submit" class="btn form__button">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="location">
+				<div class="location__container">
+					<div class="location__wrapper">
+						<h2 class="location__title title"><p>Где мы находимся?</p></h2>
+					</div>
+				</div>
+				<div class="location__containers-2">
+					<div class="location__inners">
+						<div class="location__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab4509b55ed341a5f8ff5449bd6a88784ed086e9e109f41dfff9602c7714f9ee4&amp;source=constructor" width="100%" height="100%"  frameborder="0"></iframe>
+						</div>
+						<div class="location__adress">
+							<div class="location__adress-inner">
+								<p>Петербург, Большая морская 18</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__inners">
+					<div clxass="footer__inner-logo logo-inner">
+						<div class="footer__logo-inner__img">
+							<img src="./image/footer/footer__logo.svg" alt="">
+						</div>
+					</div>
+					<div class="footer__inner-contacts contacts-inner">
+						<div class="contacts-inner__adress">
+							<p>Петербург, Большая морская 18</p>
+						</div>
+						<div class="footer-inner__text">
+							<p><a class="contacts__link" href="mailto:izhora@mail.ru">izhora@mail.ru</a></p>
+							<p><a class="contacts__link" href="tel:+79820708070">+7 (982) 070 80 70</a></p>
+						</div>
+					</div>
+			  </div>
+			</div>
+		</footer>
+	</div>
+	
+	<script defer  src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script defer  src="./js/script.js"></script>
+
+</html>
