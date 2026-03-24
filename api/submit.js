@@ -1,35 +1,25 @@
 import { sql } from '@vercel/postgres';
 
 export default async function handler(req, res) {
-  // Только POST
-  if (req.method !== 'POST') {
-    return res.status(405).send('Method not allowed');
-  }
+  if (req.method !== 'POST') return res.status(405).send('Method not allowed');
 
-  const { name, fone } = req.body;
+  // Получаем данные из обычной формы
+  const body = await new Promise((resolve) => {
+    let data = '';
+    req.on('data', chunk => data += chunk);
+    req.on('end', () => resolve(new URLSearchParams(data)));
+  });
 
-  // Проверка что поля заполнены
-  if (!name || !fone) {
-    return res.redirect(302, '/?error=empty');
-  }
+  const name = body.get('name');
+  const fone = body.get('fone');
+
+  if (!name || !fone) return res.redirect(302, '/?error=empty');
 
   try {
-    // Создаём таблицу если не существует (при первом запросе)
-    await sql`
-      CREATE TABLE IF NOT EXISTS leads (
-        id SERIAL PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        phone VARCHAR(50) NOT NULL,
-        created_at TIMESTAMP DEFAULT NOW()
-      )
-    `;
-
-    // Сохраняем заявку
+    // Сохраняем заявку в базе
     await sql`
       INSERT INTO leads (name, phone) VALUES (${name}, ${fone})
     `;
-
-    // Перенаправляем на страницу "спасибо"
     return res.redirect(302, '/thanks.html');
   } catch (error) {
     console.error('DB Error:', error);
